@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/w3.css";
+
+body {
+  background: url('./assets/wallpaper-azerty.png') no-repeat;
+  background-size: cover;
+}
+article {
+  background: url('./assets/article.jpg') repeat;
+  color: whitesmoke;
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px;
+}

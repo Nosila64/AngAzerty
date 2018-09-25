@@ -1,0 +1,23 @@
+<article>
+  <form [formGroup]="signForm" (ngSubmit)="onSubmit(signForm)">
+    <label>Nom:</label>
+    <input class="w3-input" formControlName="lnameP" type="text" placeholder="Nom">
+    <label>Prénom:</label>
+    <input class="w3-input" type="text" formControlName="fnameP" placeholder="Prénom">
+    <label>Adresse mail:</label>
+    <input class="w3-input" type="text" formControlName="mailP" placeholder="Adresse Mail">
+    <label>Niveau:</label>
+    <select class="w3-select" formControlName="lvlP">
+      <option value="">Choisir une option</option>
+      <option value="Débutant(e)">Débutant(e)</option>
+      <option value="Confirmé(é)">Confirmé(é)</option>
+    </select>
+    <br />
+    <br />
+    <input type="submit" class="w3-button w3-submit" [disabled]="!signForm.valid" value="Inscription"/>
+    <div class="w3-panel w3-green message" *ngIf="message">
+      <span (click)="deleteMessage()">&times;</span>
+      {{message}}
+    </div>
+  </form>
+</article>

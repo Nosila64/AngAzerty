@@ -1,0 +1,19 @@
+.titleAZ {
+  width: 90%;
+  height: 200px;
+  margin:2% auto 3% auto;
+}
+.logo{
+  width: 15%;
+  margin-left: 7%;
+}
+.titleAL {
+  width: 60%;
+  display: inline-block;
+  font-family: "Ethnocentric", Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: 100px;
+  text-align: center;
+  float: right;
+}
+

@@ -41,7 +41,7 @@ export class AzertysignComponent implements OnInit {
     this.apiService.signUp(azertySign).subscribe((result: ApiResult) => {
       this.apiResult = {
         message: result.message,
-        rows: null
+        results: null
       };
       this.message = "Inscription Validée";
       this.signForm.reset({lvlP: ''});

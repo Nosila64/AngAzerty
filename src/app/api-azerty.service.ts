@@ -17,4 +17,12 @@ export class ApiAzertyService {
   signUp(dataForm: AzertySignData):Observable<ApiResult> {
     return this.http.post<ApiResult>(this.apiUrl+"/addplayer",dataForm);
   }
+
+  getSignUp(): Observable<ApiResult> {
+    return this.http.get<ApiResult>(this.apiUrl+"/player");
+  }
+
+  validPassage(score,idplayer): Observable<ApiResult> {
+    return this.http.post<ApiResult>(this.apiUrl+"/player",{scoreP:score,idPlayer:idplayer});
+  }
 }

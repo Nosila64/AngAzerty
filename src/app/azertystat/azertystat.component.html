@@ -1,0 +1,24 @@
+<article>
+  <h1>Azerty Stats:</h1>
+  <select (change)="onChange($event.target.value)" class="w3-select">
+    <option value="">Choisir une date</option>
+    <option *ngFor="let date of datesList" value="{{date.daterun}}">{{date.daterun | date}}</option>
+  </select>
+  <br />
+  <br />
+  <br />
+  <table class="w3-table w3-striped w3-bordered w3-size" *ngIf="playerList.length > 0">
+    <tr class="backtable">
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Mail</th>
+      <th>Score</th>
+    </tr>
+    <tr *ngFor="let player of playerList;" id="{{player.idplayer}}">
+      <td>{{player.lnameP}}</td>
+      <td>{{player.fnameP}}</td>
+      <td>{{player.mailP}}</td>
+      <td>{{player.scoreP}}</td>
+    </tr>
+  </table>
+</article>

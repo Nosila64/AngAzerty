@@ -9,6 +9,7 @@ import { AzertyRoutingModule } from './azerty-routing.module';
 import { AzertyWelcomeComponent } from './azerty-welcome/azerty-welcome.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { AzertystatComponent } from './azertystat/azertystat.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     AzertylisteComponent,
     AzertysignComponent,
     AzertywatchComponent,
-    AzertyWelcomeComponent
+    AzertyWelcomeComponent,
+    AzertystatComponent
   ],
   imports: [
     FormsModule,

@@ -25,4 +25,10 @@ export class ApiAzertyService {
   validPassage(score,idplayer): Observable<ApiResult> {
     return this.http.post<ApiResult>(this.apiUrl+"/player",{scoreP:score,idPlayer:idplayer});
   }
+  getDates(): Observable<ApiResult> {
+    return this.http.get<ApiResult>(this.apiUrl+"/listdates");
+  }
+  getPlayerDoneByDate(date): Observable<ApiResult> {
+    return this.http.get<ApiResult>(this.apiUrl+"/stats/"+date);
+  }
 }

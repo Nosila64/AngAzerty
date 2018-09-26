@@ -10,7 +10,7 @@
     <tr *ngFor="let player of watchList;" id="{{player.idplayer}}">
       <td>{{player.lnameP}}</td>
       <td>{{player.fnameP}}</td>
-      <td><input type="text" #score class="w3-input"></td>
+      <td><input type="text" #score class="w3-input" required></td>
       <input type="hidden" #idplayer value="{{player.idplayer}}">
       <td><input type="submit" value="✓" class="w3-button" (click)="validPassage(score,idplayer)"></td>
     </tr>

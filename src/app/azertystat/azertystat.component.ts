@@ -21,6 +21,7 @@ export class AzertystatComponent implements OnInit {
         message: null,
         results: result.results
       };
+      console.log(this.apiResult.results);
       this.datesList = this.apiResult.results;
     })
   }

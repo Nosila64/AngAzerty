@@ -1,3 +1,19 @@
-<p>
-  azertyliste works!
-</p>
+<article>
+  <h1>AzertyListe TV:</h1>
+  <div>
+    Temps d'Attente:
+    <span class="green square"></span> ~ 10 minutes
+    <span class="yellow square"></span> ~ 20 minutes
+    <span class="blue square"></span> > 30 minutes
+  </div> <br/>
+  <table class="w3-table w3-striped w3-bordered w3-size">
+    <tr class="backtable">
+      <th>Nom</th>
+      <th>Prénom</th>
+    </tr>
+    <tr *ngFor="let player of watchList;" id="{{player.idplayer}}" class="{{player.color}}">
+      <td>{{player.lnameP}}</td>
+      <td>{{player.fnameP}}</td>
+    </tr>
+  </table>
+</article>

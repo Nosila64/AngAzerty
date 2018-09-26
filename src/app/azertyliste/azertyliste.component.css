@@ -1,0 +1,29 @@
+article {
+  font-size: 20px;
+}
+.w3-size {
+  margin:auto;
+  width: 80%;
+  text-align: center;
+  color: black;
+}
+.w3-striped > .green{
+  background-color: antiquewhite;
+}
+.backtable {
+  background-color: #ffca06 ;
+}
+.green {
+  background-color: #8bc34a !important;
+}
+.yellow {
+  background-color: darkorange !important;
+}
+.blue {
+  background-color: #e91e63 !important;
+}
+.square {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}

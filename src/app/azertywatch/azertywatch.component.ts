@@ -10,7 +10,6 @@ import {ApiResult} from "../api-result";
 })
 export class AzertywatchComponent implements OnInit {
 
-  @Input() score;
   watchList: AzertyWatchData[];
   apiResult: ApiResult;
   constructor(private apiService: ApiAzertyService) { }
@@ -22,7 +21,6 @@ export class AzertywatchComponent implements OnInit {
         message: null,
         results: result.results
       };
-      console.log(this.apiResult);
       this.watchList = this.apiResult.results;
     });
   }
